@@ -60,7 +60,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-3">
-                                <a class="logo" href="index-2.html">
+                                <a class="logo" href="{{url("/")}}">
                                     <img src="{{asset('img/logo.png')}}" alt="Image Alternative text" title="Image Title" />
                                 </a>
                             </div>
@@ -72,7 +72,7 @@
                                         @else 
                                             <li class="top-user-area-avatar">
                                             <a href="{{ url('user', ['id' => Auth::user()->id]) }}">
-                                                <img class="origin round" src="img/amaze_40x40.jpg" alt="Image Alternative text" title="AMaze" />{{ Auth::user()->email }}</a>
+                                                <img class="origin round" src="{{asset('img/amaze_40x40.jpg')}}" alt="Image Alternative text" title="AMaze" />{{ Auth::user()->email }}</a>
                                             </li>
                                             <li><a href="{{ url('auth/logout') }}">Изход</a>
                                             </li>
@@ -109,64 +109,34 @@
                 <div class="container">
                     <div class="row row-wrap">
                         <div class="col-md-3">
-                            <a class="logo" href="index-2.html">
-                                <img src="img/logo-invert.png" alt="Image Alternative text" title="Image Title" />
+                            <a class="logo" href="{{url("/")}}">
+                                <img src="{{asset('img/logo.png')}}" alt="Logo" title="Logo" />
                             </a>
-                            <p class="mb20">Booking, reviews and advices on hotels, resorts, flights, vacation rentals, travel packages, and lots more!</p>
-                            <ul class="list list-horizontal list-space">
-                                <li>
-                                    <a class="fa fa-facebook box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="fa fa-twitter box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="fa fa-google-plus box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="fa fa-linkedin box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="fa fa-pinterest box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
-                                </li>
-                            </ul>
+                            <p class="mb20">Евтин и лесен начин за пътуване. Може да пътувате с други хора на дълеки и близки разстояния като се разберете за време и място на срещата и да разделите разходите.</p>
                         </div>
 
                         <div class="col-md-3">
                             <h4>Newsletter</h4>
                             <form>
-                                <label>Enter your E-mail Address</label>
+                                <label>Въведете Вашия имейл адрес</label>
                                 <input type="text" class="form-control">
-                                <p class="mt5"><small>*We Never Send Spam</small>
+                                <p class="mt5"><small>*Обещаваме да не изпращаме СПАМ!</small>
                                 </p>
-                                <input type="submit" class="btn btn-primary" value="Subscribe">
+                                <input type="submit" class="btn btn-primary" value="Абонирай се">
                             </form>
                         </div>
                         <div class="col-md-2">
                             <ul class="list list-footer">
-                                <li><a href="#">About US</a>
+                                <li><a href="#">За нас</a>
                                 </li>
-                                <li><a href="#">Press Centre</a>
-                                </li>
-                                <li><a href="#">Best Price Guarantee</a>
-                                </li>
-                                <li><a href="#">Travel News</a>
-                                </li>
-                                <li><a href="#">Jobs</a>
-                                </li>
-                                <li><a href="#">Privacy Policy</a>
-                                </li>
-                                <li><a href="#">Terms of Use</a>
-                                </li>
-                                <li><a href="#">Feedback</a>
+                                <li><a href="#">Общи условия</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-md-4">
-                            <h4>Have Questions?</h4>
-                            <h4 class="text-color">+1-202-555-0173</h4>
-                            <h4><a href="#" class="text-color">support@traveler.com</a></h4>
-                            <p>24/7 Dedicated Customer Support</p>
+                            <h4>Имате въпрос?</h4>
+                            <h4 class="text-color">+359 8 88 88 88</h4>
+                            <h4><a href="#" class="text-color">support@myvane.com</a></h4>
                         </div>
 
                     </div>

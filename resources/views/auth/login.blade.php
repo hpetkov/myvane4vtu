@@ -33,7 +33,7 @@
                                 </form>
                             </div>
                             <div class="col-md-4">
-                                <h3 class="mb15">Нов MyVane?</h3>
+                                <h3 class="mb15">Нов в MyVane?</h3>
                                 <form action="{{ url('auth/register') }}" method="POST">
                                     {{ csrf_field() }}
 
