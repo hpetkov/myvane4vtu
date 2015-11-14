@@ -40,7 +40,8 @@ class CreateMainTables extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
-        Schema::create('travels', function (Blueprint $table) {
+        
+        Schema::create('travels', function(Blueprint $table) {
             $table->increments('id', true);
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
@@ -49,9 +50,10 @@ class CreateMainTables extends Migration
             $table->string('to_city', 255);    
             $table->decimal('price');    
             $table->string('information');    
-            $table->integer('max_persons');   
-            $table->integer('vehicle_id')->unsigned();
-            $table->foreign('vehicle_id')->references('id')->on('vehicles');  
+            $table->integer('max_persons');
+            $table->boolean('bags');
+            $table->boolean('airconditioner');
+            $table->boolean('radio');
             $table->timestamps();
         });
     }
