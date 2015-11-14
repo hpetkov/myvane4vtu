@@ -61,22 +61,14 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <a class="logo" href="index-2.html">
-                                    <img src="img/logo-invert.png" alt="Image Alternative text" title="Image Title" />
+                                    <img src="{{asset('img/logo.png')}}" alt="Image Alternative text" title="Image Title" />
                                 </a>
                             </div>
-                            <div class="col-md-3 col-md-offset-2">
-                                <form class="main-header-search">
-                                    <div class="form-group form-group-icon-left">
-                                        <i class="fa fa-search input-icon"></i>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col-md-4">
+                            <div class="col-md-9">
                                 <div class="top-user-area clearfix">
                                     <ul class="top-user-area-list list list-horizontal list-border">
                                         @if(Auth::guest())
-                                            <li><a href="{{ url('auth/login') }}">Register or Login</a></li>
+                                            <li><a href="{{ url('auth/login') }}">Потребитеска зона</a></li>
                                         @else 
                                             <li class="top-user-area-avatar">
                                             <a href="{{ url('user', ['id' => Auth::user()->id]) }}">
@@ -94,7 +86,7 @@
                 <div class="container">
                     <div class="nav">
                         <ul class="slimmenu" id="slimmenu">
-                            <li class="active"><a href="{{url("/")}}">Начало</a>
+                            <li><a href="{{url("/")}}">Начало</a>
                             </li>
                             <li><a href="{{url("travelling/listing")}}">Пътувания</a>
                             </li>
