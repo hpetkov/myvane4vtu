@@ -4,11 +4,11 @@
 
 <!-- Mirrored from remtsoy.com/tf_templates/traveler/demo_v1_7/login-register.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Nov 2015 08:09:06 GMT -->
 <head>
-    <title>Traveler - Login register</title>
+    <title>MyVane - Login register</title>
 
 
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <meta name="keywords" content="Template, html, premium, themeforest" />
+    <meta charset="UTF-8">
+    <meta name="keywords" content="MyVane" />
     <meta name="description" content="Traveler - Premium template for travel companies">
     <meta name="author" content="Tsoy">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +61,7 @@
     @yield('content')
 
 
-    <script src="{{ asset('js/jquery.js') }}"></script>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="{{ asset('js/bootstrap.js') }}"></script>
     <script src="{{ asset('js/slimmenu.js') }}"></script>
     <script src="{{ asset('js/bootstrap-datepicker.js') }}"></script>
