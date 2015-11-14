@@ -95,7 +95,7 @@
                 <div class='col-md-12'>
                     <div class="checkbox checkbox-stroke">
                         <label>
-                            <input class="i-check" type="checkbox"/>Прочетох и съм съгласен с Общите условия на
+                            <input class="i-check" type="checkbox"/>Прочетох и съм съгласен с <a href="{{url('pages/terms')}}">Общите условия</a> на
                             сайта</label>
                     </div>
                     <input type="submit" value="Изпрати" class="btn btn-primary"/>

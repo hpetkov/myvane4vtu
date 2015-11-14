@@ -127,9 +127,9 @@
                         </div>
                         <div class="col-md-2">
                             <ul class="list list-footer">
-                                <li><a href="#">За нас</a>
+                                <li><a href="{{url('pages/about-us')}}">За нас</a>
                                 </li>
-                                <li><a href="#">Общи условия</a>
+                                <li><a href="{{url('pages/terms')}}">Общи условия</a>
                                 </li>
                             </ul>
                         </div>

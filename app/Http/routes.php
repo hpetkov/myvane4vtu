@@ -21,4 +21,7 @@ Route::post('auth/register', 'Auth\AuthController@postRegister');
 // Travel routes
 Route::get('travelling/listing', 'TravellingController@listingAction');
 Route::get('travelling/add', 'TravellingController@addAction');
-Route::get('travelling/pay', 'TravellingController@payAction');
+Route::get('travelling/pay/{id}', 'TravellingController@payAction');
+
+Route::get('pages/about-us', 'PagesController@aboutUsAction');
+Route::get('pages/terms', 'PagesController@termsAction');
