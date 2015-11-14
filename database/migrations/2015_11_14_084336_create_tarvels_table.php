@@ -12,7 +12,7 @@ class CreateTarvelsTable extends Migration
      */
     public function up()
     {
-        Schema::create('tarvels', function (Blueprint $table) {
+        Schema::create('travels', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
         });
@@ -25,6 +25,6 @@ class CreateTarvelsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('tarvels');
+        Schema::drop('travels');
     }
 }
