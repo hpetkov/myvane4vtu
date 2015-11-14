@@ -5,6 +5,7 @@ Route::get('/', function () {
 });
 
 Route::resource('user', 'UserController');
+Route::get('user/{id}/settings', 'UserController@settings');
 
 // Authentication routes...
 Route::get('auth/login', 'Auth\AuthController@getLogin');

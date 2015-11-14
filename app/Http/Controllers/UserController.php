@@ -90,4 +90,9 @@ class UserController extends Controller
     {
         //
     }
+
+    public function settings($id)
+    {
+        return view('users.settings');
+    }
 }

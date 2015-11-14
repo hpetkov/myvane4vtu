@@ -17,7 +17,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <h3 class="mb15">Влизане</h3>
+                                <h3 class="mb15">Вход</h3>
                                 <form action="{{ url('auth/login/test') }}" method="POST">
                                     {{ csrf_field() }}
 
