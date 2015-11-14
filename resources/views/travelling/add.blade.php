@@ -9,14 +9,79 @@
     </ul>
     <h3 class="booking-title">Добави пътуване</h3>
     <div class="row">
+        <div class="col-md-12">
+            <h4>За пътуването</h4> 
+        </div>
         <div class="col-md-4">
-            <h4>За пътуването</h4>
-            <form>
-                <div class="form-group form-group-lg">
-                    <label>Дата на тръгване</label>
-                    <input type="text" class="date-pick form-control">
+            <div class="form-group form-group-lg">
+                <label>Дата на тръгване</label>
+                <input type="text" class="date-pick form-control">
+            </div>
+            <div class="form-group form-group-lg">
+                <label>Цена/пасажер</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder='Сумата, която изисквате от всеки пасажер' >
+                    <div class="input-group-addon">лв.</div>
                 </div>
-            </form>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group form-group-lg">
+                <label>Тръгва от</label>
+                <input type="text" placeholder="Град/село, от което тръгвате" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group form-group-lg">
+                <label>Пристига в</label>
+                <input type="text" placeholder="Град/село, до което ще пътувате" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="form-group form-group-lg">
+                <label>Допълнителна информация</label>
+                <input type="text" class="form-control" style='width: 100%;'>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <h4>За превозното средство</h4> 
+        </div>
+        <br />
+        <div class="col-md-4">
+            <div class="form-group form-group-lg">
+                <div class="checkbox-inline checkbox-switch">
+                    <label>
+                        <input class="i-check" type="checkbox"/>Място за багаж
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group form-group-lg">
+                <div class="checkbox-inline checkbox-switch">
+                    <label>
+                        <input class="i-check" type="checkbox"/>Климатик
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group form-group-lg">
+                <div class="checkbox-inline checkbox-switch">
+                    <label>
+                        <input class="i-check" type="checkbox"/>Радио
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class='gap'></div>
+        <div class='col-md-12'>
+            <div class="checkbox checkbox-stroke">
+                <label>
+                    <input class="i-check" type="checkbox" />Прочетох и съм съгласен с Общите условия на сайта</label>
+            </div>
+            <input type="submit" value="Изпрати" class="btn btn-primary"/>
         </div>
     </div>
     <div class="gap"></div>
