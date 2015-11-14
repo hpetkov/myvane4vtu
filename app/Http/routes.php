@@ -4,6 +4,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::post('travel', 'TravellingController@store');
+
 Route::resource('user', 'UserController');
 Route::get('user/{id}/settings', 'UserController@settings');
 
