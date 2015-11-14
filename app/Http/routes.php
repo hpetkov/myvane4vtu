@@ -21,3 +21,4 @@ Route::post('auth/register', 'Auth\AuthController@postRegister');
 // Travel routes
 Route::get('travelling/listing', 'TravellingController@listingAction');
 Route::get('travelling/add', 'TravellingController@addAction');
+Route::get('travelling/pay', 'TravellingController@payAction');

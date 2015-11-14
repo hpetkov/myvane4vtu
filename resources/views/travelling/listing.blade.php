@@ -52,40 +52,48 @@
                 </ul>
             </div>
             <ul class="booking-list">
+                @foreach($travels as $travel)
                 <li>
                     <a class="booking-item" href="#">
                         <div class="row">
                             <div class="col-md-3 text-center">
-                                <h4>В. Търново</h4>
+                                <h4>{{$travel->from_city}}</h4>
                                 &darr;
-                                <h4>Пловдив</h4>
+                                <h4>{{$travel->to_city}}</h4>
                             </div>
                             <div class="col-md-6">
                                 <div class="row">
                                     <div class="col-md-8">
                                         <ul class="booking-item-features booking-item-features-sign clearfix">
-                                            <li rel="tooltip" data-placement="top" title="Пасажери"><i class="fa fa-male"></i><span class="booking-item-feature-sign">x 6</span>
+                                            <li rel="tooltip" data-placement="top" title="Пасажери"><i class="fa fa-male"></i><span class="booking-item-feature-sign">x {{$travel->max_persons}}</span>
                                             </li>
                                         </ul>
                                         <ul class="booking-item-features booking-item-features-small clearfix">
+                                            @if($travel->bags == true)
                                             <li rel="tooltip" data-placement="top" title="Възможност за багаж"><i class="fa fa-briefcase"></i>
                                             </li>
+                                            @endif
+                                            @if($travel->airconditioner == true)
                                             <li rel="tooltip" data-placement="top" title="Климатик"><i class="im im-air"></i>
                                             </li>
+                                            @endif
+                                            @if($travel->radio == true)
                                             <li rel="tooltip" data-placement="top" title="Радио"><i class="im im-fm"></i>
                                             </li>
+                                            @endif
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-3">
-                                <span class="booking-item-price">5</span>
+                                <span class="booking-item-price">{{$travel->price}}</span>
                                 <span>лв./п.</span><br />
                                 <span class="btn btn-primary">Избери</span>
                             </div>
                         </div>
                     </a>
                 </li>
+                @endforeach
             </ul>
         </div>
     </div>
