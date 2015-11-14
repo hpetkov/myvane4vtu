@@ -11,53 +11,53 @@
                         <div class="row row-wrap" data-gutter="60">
                             <div class="col-md-4">
                                 <div class="visible-lg">
-                                    <h3 class="mb15">������ MyVane</h3>
-                                    <p>Est nisl facilisis consectetur eget fermentum rutrum suscipit penatibus ultrices eu bibendum mi volutpat mattis cum facilisis nunc platea tincidunt vehicula laoreet montes parturient urna magnis eu etiam eget integer</p>
-                                    <p>Nullam consectetur fames erat scelerisque ac conubia orci mauris facilisi</p>
+                                    <h3 class="mb15">MyVane - споделено пътуване</h3>
+                                    <p>Евтин и лесен начин за пътуване.
+                                    Може да пътувате с други хора на дълеки и близки разстояния като се разберете за време и място на срещата и да разделите разходите.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <h3 class="mb15">Login</h3>
+                                <h3 class="mb15">Влизане</h3>
                                 <form action="{{ url('auth/login/test') }}" method="POST">
                                     {{ csrf_field() }}
 
                                     <div class="form-group form-group-ghost form-group-icon-left"><i class="fa fa-user input-icon input-icon-show"></i>
-                                        <label>Email</label>
+                                        <label>Имейл</label>
                                         <input name="email" class="form-control" placeholder="e.g. johndoe@gmail.com" type="text" />
                                     </div>
                                     <div class="form-group form-group-ghost form-group-icon-left"><i class="fa fa-lock input-icon input-icon-show"></i>
-                                        <label>Password</label>
-                                        <input name="password" class="form-control" type="password" placeholder="my secret password" />
+                                        <label>Парола</label>
+                                        <input name="password" class="form-control" type="password" />
                                     </div>
-                                    <input class="btn btn-primary" type="submit" value="Sign in" />
+                                    <input class="btn btn-primary" type="submit" value="Влез" />
                                 </form>
                             </div>
                             <div class="col-md-4">
-                                <h3 class="mb15">New To Traveler?</h3>
+                                <h3 class="mb15">Нов MyVane?</h3>
                                 <form action="{{ url('auth/register') }}" method="POST">
                                     {{ csrf_field() }}
 
                                     <div class="form-group form-group-ghost form-group-icon-left"><i class="fa fa-user input-icon input-icon-show"></i>
-                                        <label>First Name</label>
+                                        <label>Име</label>
                                         <input name="first_name" class="form-control" type="text" required/>
                                     </div>
                                     <div class="form-group form-group-ghost form-group-icon-left"><i class="fa fa-envelope input-icon input-icon-show"></i>
-                                        <label>Last Name</label>
+                                        <label>Фамилия</label>
                                         <input name="last_name" class="form-control" type="text" required/>
                                     </div>
                                     <div class="form-group form-group-ghost form-group-icon-left"><i class="fa fa-envelope input-icon input-icon-show"></i>
-                                        <label>Email</label>
+                                        <label>Имейл</label>
                                         <input name="email" class="form-control" placeholder="e.g. johndoe@gmail.com" type="text" required/>
                                     </div>
                                     <div class="form-group form-group-ghost form-group-icon-left"><i class="fa fa-lock input-icon input-icon-show"></i>
-                                        <label>Password</label>
+                                        <label>Парола</label>
                                         <input name="password" class="form-control" type="password" />
                                     </div>
                                     <div class="form-group form-group-ghost form-group-icon-left"><i class="fa fa-lock input-icon input-icon-show"></i>
-                                        <label>Password</label>
+                                        <label>Потвърждаване на парола</label>
                                         <input name="password_confirmation" class="form-control" type="password" />
                                     </div>
-                                    <input class="btn btn-primary" type="submit" value="Sign up for MyVane" />
+                                    <input class="btn btn-primary" type="submit" value="Регистрация за MyVane" />
                                 </form>
                             </div>
                         </div>
