@@ -10951,3 +10951,6 @@ img.mfp-img {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
+#main-footer {
+    margin-top: 0px !important;
+}
