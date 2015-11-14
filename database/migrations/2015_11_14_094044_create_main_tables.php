@@ -32,8 +32,6 @@ class CreateMainTables extends Migration
             $table->string('first_name', 255);
             $table->string('last_name', 255);
             $table->string('city', 255);
-            $table->integer('country_id')->unsigned();
-            $table->foreign('country_id')->references('id')->on('countries');
             $table->string('address', 255);
             $table->string('phone_number', 15);
             $table->string('email')->unique();

@@ -75,12 +75,16 @@
                             <div class="col-md-4">
                                 <div class="top-user-area clearfix">
                                     <ul class="top-user-area-list list list-horizontal list-border">
-                                        <li class="top-user-area-avatar">
-                                            <a href="user-profile.html">
-                                                <img class="origin round" src="img/amaze_40x40.jpg" alt="Image Alternative text" title="AMaze" />Hi, John</a>
-                                        </li>
-                                        <li><a href="#">Изход</a>
-                                        </li>
+                                        @if(Auth::guest())
+                                            <li><a href="{{ url('auth/login') }}">Register or Login</a></li>
+                                        @else 
+                                            <li class="top-user-area-avatar">
+                                            <a href="{{ url('user', ['id' => Auth::user()->id]) }}">
+                                                <img class="origin round" src="img/amaze_40x40.jpg" alt="Image Alternative text" title="AMaze" />{{ Auth::user()->email }}</a>
+                                            </li>
+                                            <li><a href="{{ url('auth/logout') }}">Изход</a>
+                                            </li>
+                                        @endif
                                     </ul>
                                 </div>
                             </div>
